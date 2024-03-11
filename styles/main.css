@@ -1,36 +1,140 @@
-.block1_Inl .model {
-    display: inline;
+* {
+    box-sizing: border-box;         /* свойство відповідає за правильне відобраєення свойств висоти, ширини і т.д. елементів */ 
+    margin: 0;
+    padding: 0;
 }
 
-.model {
-    margin: 10px;
-    width: 100px;
+header > .top-line {
     height: 50px;
+    background-color: #bcbaba;
 }
 
-.block1_Inl span {
-    padding: 10px;    
+.container {
+    width: 1110px;
+    margin: 0 auto;
 }
 
-.green {
-    background-color: green;
+header .main-menu {
+    border-bottom: 2px solid #bcbaba;
+    height: 85px;
+}
+
+header .main-menu .container {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 85px;
+    padding-left: 20px;
+}
+
+.main-menu .link {
+    border: 0;
+    background: none;
+    outline: none;
+}
+
+.main-menu .link:hover {
+    cursor: pointer;
+}
+
+.smartphones {
+    width: 1110px;
+    height: 250px;
+    margin: 15px auto;
+    background: url('../icons/phones.jpg') center center/cover no-repeat;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+} 
+
+.smartphones .category {
+    line-height: 250px;
+    font-size: 50px;
+    font-weight: 600;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.smartphones .products_name {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 85px;
+    padding-left: 20px;
+}
+
+section .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    
+}
+
+.category .products .item {
+    background-color: #fff;
+    padding: 15px;
     text-align: center;
-    line-height: 50px;
+    border: 1px solid #c6c6ce;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.blue {
-    background-color: #6495ED;
+.category .products .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
 }
 
-.yellow {
-    background-color: yellow;
+.category .products .item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 100;
 }
 
-.block3_both .model {
-    display: inline-block;
-    padding: 10px;
+.category .products .item .buy {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    margin-top: 10px;
 }
 
-.inner {
-    display: block;;
+.price {
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: bold;
 }
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    min-height: 100px;
+    background-color: #1a1a1a;
+    padding: 15px 0 15px 0; 
+}
+ 
+.info {
+    margin: 0 auto;
+    width: 377px;
+    text-align: center;
+    color: #888888;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+footer a {
+    color: #888888;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    line-height:21px;
+    text-decoration: none;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
